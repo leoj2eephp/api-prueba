@@ -13,7 +13,7 @@ class Region {
         foreach ($rs as $fila) {
             $region = new region();
             $region->id = $fila["id"];
-            $region->nombre = $fila["nombre"];
+            $region->nombre = utf8_encode($fila["nombre"]);
 
             $regiones[] = $region;
         }
