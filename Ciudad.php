@@ -1,10 +1,18 @@
 <?php
 include_once 'ConexionBD.php';
 
-class Ciudad {
+class Ciudad implements JsonSerializable {
     public $id;
     public $nombre;
     public $region_id;
+
+    public function jsonSerialize(): mixed {
+        return [
+            "id" => $this->id,
+            "nombre" => $this->nombre,
+            "region_id" => $this->region_id
+        ];
+    }
 
     public static function getAll() {
         $c = new ConexionBD();
@@ -19,8 +27,7 @@ class Ciudad {
 
             $ciudades[] = $ciudad;
         }
-        
+
         return $ciudades;
     }
-
 }
