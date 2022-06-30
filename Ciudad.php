@@ -12,11 +12,12 @@ class Ciudad {
         $ciudades = [];
 
         foreach ($rs as $fila) {
-            /* $ciudad = new Ciudad();
+            $ciudad = new Ciudad();
             $ciudad->id = $fila["id"];
             $ciudad->nombre = $fila["nombre"];
-            $ciudad->region_id = $fila["region_id"]; */
-            $ciudades[] = $fila;
+            $ciudad->region_id = $fila["region_id"];
+
+            $ciudades[] = $ciudad;
         }
         
         return $ciudades;
