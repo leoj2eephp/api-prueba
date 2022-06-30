@@ -8,7 +8,7 @@ class Ciudad {
 
     public static function getAll() {
         $c = new ConexionBD();
-        $rs = $c->conn->query("SELECT * FROM ciudad");
+        $rs = $c->bd->query("SELECT * FROM ciudad");
         $ciudades = [];
 
         foreach ($rs as $fila) {
