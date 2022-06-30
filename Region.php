@@ -7,7 +7,7 @@ class Region {
     
     public static function getAll() {
         $c = new ConexionBD();
-        $rs = $c->conn->query("SELECT * FROM region");
+        $rs = $c->bd->query("SELECT * FROM region");
         $regiones = [];
 
         foreach ($rs as $fila) {
