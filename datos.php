@@ -4,6 +4,8 @@ include_once 'Ciudad.php';
 include_once 'Region.php';
 
 header('Content-Type: application/json');
+header('Access-Control-Allow-Origin: *');
+header('Access-Control-Allow-Credentials: true');
 $respuesta = "";
 // Por este filtro pasarán las llamas por GET
 if ($_SERVER["REQUEST_METHOD"] == "GET") {
