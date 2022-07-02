@@ -1,7 +1,7 @@
 <?php
-
 include_once 'Ciudad.php';
 include_once 'Region.php';
+include_once 'Persona.php';
 
 header('Content-Type: application/json');
 header('Access-Control-Allow-Origin: *');
