@@ -26,7 +26,7 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
                 break;
         }
     } else {
-        $respuesta = "Debe especificar un action ciudades o regiones";
+        $respuesta = "Debe especificar un action ciudades, regiones o personas";
     }
 }
 
