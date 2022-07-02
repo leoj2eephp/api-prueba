@@ -20,6 +20,10 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
                 $region = new Region();
                 $respuesta = $region->getAll();
                 break;
+            case "personas":
+                $persona = new Persona();
+                $respuesta = $persona->getAll();
+                break;
         }
     } else {
         $respuesta = "Debe especificar un action ciudades o regiones";
