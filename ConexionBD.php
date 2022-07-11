@@ -5,6 +5,7 @@ class ConexionBD {
 
     function __construct() {
         $this->bd = new PDO('mysql:host=localhost;dbname=frontend', "leodev", "leo123GUITAR.");
+        // $this->bd = new PDO('mysql:host=localhost;dbname=frontend', "root", "root");
     }
     
 }
