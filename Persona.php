@@ -29,6 +29,9 @@ class Persona {
             $personas[] = $persona;
         }
         
+        print_r($personas);
+        die;
+        
         return $personas;
     }
 }
