@@ -11,7 +11,7 @@ class Asignatura {
         $asignaturas = [];
 
         foreach ($rs as $fila) {
-            $asignatura = new Persona();
+            $asignatura = new Asignatura();
             $asignatura->id = $fila["id"];
             $asignatura->nombre = utf8_encode($fila["nombre"]);
 

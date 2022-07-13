@@ -1,6 +1,5 @@
 <?php
 include_once 'ConexionBD.php';
-include_once 'Ciudad.php';
 
 class Persona {
     public $id;
