@@ -7,7 +7,7 @@ class TipoProducto {
 
     public static function getAll() {
         $c = new ConexionBD();
-        $rs = $c->bd->query("SELECT * FROM tipoProducto");
+        $rs = $c->bd->query("SELECT * FROM tipo_producto");
         $tiposProductos = [];
 
         foreach ($rs as $fila) {
