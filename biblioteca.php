@@ -1,6 +1,6 @@
 <?php
-include_once 'models/Alumno.php';
-include_once 'models/Asignatura.php';
+include_once 'models/Socio.php';
+include_once 'models/Libro.php';
 
 header('Content-Type: application/json');
 header('Access-Control-Allow-Origin: *');
@@ -11,15 +11,15 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
     $action = $_GET["action"];
     if (isset($action)) {
         switch ($action) {
-            case "alumnos":
-                $respuesta = Alumno::getAll();
+            case "socios":
+                $respuesta = Socio::getAll();
                 break;
-            case "asignaturas":
-                $respuesta = Asignatura::getAll();
+            case "libros":
+                $respuesta = Libro::getAll();
                 break;
         }
     } else {
-        $respuesta = "Debe especificar un action alumnos o asignaturas";
+        $respuesta = "Debe especificar un action socios o libros";
     }
 }
 
