@@ -15,7 +15,7 @@ class Telefono {
 
         foreach ($rs as $fila) {
             $telefono = new Telefono();
-            $telefono->numero = $fila["id"];
+            $telefono->numero = $fila["numero"];
             $telefono->minutos_plan = utf8_encode($fila["minutos_plan"]);
             $telefono->cliente_id = utf8_encode($fila["cliente_id"]);
 
