@@ -7,7 +7,7 @@ class Socio {
     public $apellido;
 
     public static function getAll() {
-        $c = new ConexionBD();
+        /* $c = new ConexionBD();
         $rs = $c->bd->query("SELECT * FROM socio");
         $socios = [];
 
@@ -18,8 +18,16 @@ class Socio {
             $socio->apellido = utf8_encode($fila["apellido"]);
 
             $socios[] = $socio;
-        }
-        
+        } */
+        $socios = [
+            ['id' => 1, 'nombre' => 'Pedro', 'apellido' => 'García'],
+            ['id' => 2, 'nombre' => 'Luisa', 'apellido' => 'Martínez'],
+            ['id' => 3, 'nombre' => 'Elena', 'apellido' => 'Rodríguez'],
+            ['id' => 4, 'nombre' => 'Miguel', 'apellido' => 'Hernández'],
+            ['id' => 5, 'nombre' => 'Raúl', 'apellido' => 'Núñez'],
+            ['id' => 6, 'nombre' => 'Clara', 'apellido' => 'Díaz'],
+            ['id' => 7, 'nombre' => 'Diego', 'apellido' => 'Ortiz']
+        ];
         return $socios;
     }
 }

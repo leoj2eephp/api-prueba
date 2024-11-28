@@ -7,7 +7,7 @@ class Paciente {
     public $apellido;
 
     public static function getAll() {
-        $c = new ConexionBD();
+        /* $c = new ConexionBD();
         $rs = $c->bd->query("SELECT * FROM paciente");
         $pacientes = [];
 
@@ -18,8 +18,16 @@ class Paciente {
             $paciente->apellido = utf8_encode($fila["apellido"]);
             
             $pacientes[] = $paciente;
-        }
-        
+        } */
+        $pacientes = [
+            ['id' => 1, 'nombre' => 'Eva', 'apellido' => 'Muñoz'],
+            ['id' => 2, 'nombre' => 'Andrés', 'apellido' => 'Vega'],
+            ['id' => 3, 'nombre' => 'Rosa', 'apellido' => 'Pascual'],
+            ['id' => 4, 'nombre' => 'Samuel', 'apellido' => 'Luna'],
+            ['id' => 5, 'nombre' => 'Laura', 'apellido' => 'Reyes'],
+            ['id' => 6, 'nombre' => 'Héctor', 'apellido' => 'Caballero'],
+            ['id' => 7, 'nombre' => 'Ángela', 'apellido' => 'Blanco']
+        ];
         return $pacientes;
     }
 }
