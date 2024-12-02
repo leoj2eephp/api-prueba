@@ -1,6 +1,6 @@
 <?php
 include_once 'models/Producto.php';
-include_once 'models/TipoProducto.php';
+include_once 'models/Cliente.php';
 
 header('Content-Type: application/json');
 header('Access-Control-Allow-Origin: *');
