@@ -14,8 +14,8 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
             case "productos":
                 $respuesta = Producto::getAll();
                 break;
-            case "tipo_productos":
-                $respuesta = TipoProducto::getAll();
+            case "clientes":
+                $respuesta = Cliente::getAll();
                 break;
         }
     } else {
