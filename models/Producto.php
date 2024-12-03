@@ -30,13 +30,13 @@ class Producto {
             $productos[] = $producto;
         } */
         $productos = [
-            ['id' => 1, 'nombre' => 'Laptop', 'stock' => 10],
-            ['id' => 2, 'nombre' => 'Teclado', 'stock' => 15],
-            ['id' => 3, 'nombre' => 'Ratón', 'stock' => 20],
-            ['id' => 4, 'nombre' => 'Monitor', 'stock' => 8],
-            ['id' => 5, 'nombre' => 'Impresora', 'stock' => 5],
-            ['id' => 6, 'nombre' => 'Cámara', 'stock' => 12],
-            ['id' => 7, 'nombre' => 'Auriculares', 'stock' => 25]
+            ['id' => 1, 'nombre' => 'Laptop', 'stock' => 10, 'precio' => 850000],
+            ['id' => 2, 'nombre' => 'Teclado', 'stock' => 15, 'precio' => 25000],
+            ['id' => 3, 'nombre' => 'Ratón', 'stock' => 20, 'precio' => 15000],
+            ['id' => 4, 'nombre' => 'Monitor', 'stock' => 8, 'precio' => 220000],
+            ['id' => 5, 'nombre' => 'Impresora', 'stock' => 5, 'precio' => 130000],
+            ['id' => 6, 'nombre' => 'Cámara', 'stock' => 12, 'precio' => 550000],
+            ['id' => 7, 'nombre' => 'Auriculares', 'stock' => 25, 'precio' => 45000]
         ];
         return $productos;
     }
