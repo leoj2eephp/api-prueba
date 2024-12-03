@@ -27,13 +27,13 @@ class Telefono {
             $telefonos[] = $telefono;
         } */
         $telefonos = [
-            ['numero' => 1, 'minutos_plan' => 100, 'cliente_id' => 1],
-            ['numero' => 2, 'minutos_plan' => 200, 'cliente_id' => 2],
-            ['numero' => 3, 'minutos_plan' => 150, 'cliente_id' => 2],
-            ['numero' => 4, 'minutos_plan' => 300, 'cliente_id' => 4],
-            ['numero' => 5, 'minutos_plan' => 120, 'cliente_id' => 7],
-            ['numero' => 6, 'minutos_plan' => 250, 'cliente_id' => 5],
-            ['numero' => 7, 'minutos_plan' => 180, 'cliente_id' => 1]
+            ['numero' => 99998888, 'minutos_plan' => 100, 'cliente_id' => 1],
+            ['numero' => 99876542, 'minutos_plan' => 200, 'cliente_id' => 2],
+            ['numero' => 98887777, 'minutos_plan' => 150, 'cliente_id' => 2],
+            ['numero' => 95645785, 'minutos_plan' => 300, 'cliente_id' => 4],
+            ['numero' => 92223341, 'minutos_plan' => 120, 'cliente_id' => 7],
+            ['numero' => 94359875, 'minutos_plan' => 250, 'cliente_id' => 5],
+            ['numero' => 97897898, 'minutos_plan' => 180, 'cliente_id' => 1]
         ];
         return $telefonos;
     }
